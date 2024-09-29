@@ -16,6 +16,9 @@ header{
     border-radius: 8px;
     border: none;
 }
+.text-light-gray{
+    color: #727272;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -55,13 +58,11 @@ nav li a{
 .banner-image{
     width: 100%;
 }
-.banner-description{
-    color: #727272;
-}
+
 /* main styles */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 .teams-container{
     display: flex;
@@ -81,7 +82,7 @@ main{
 }
 .teams-title .quick-list{
     font-weight: 500;
-    color: #424242;
+    
 }
 .teams-title .team-features{
     font-weight: 700;
@@ -92,15 +93,22 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 @media screen and (min-width:576px) and (max-width:992px){
     header{
         padding: 50px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
 }
